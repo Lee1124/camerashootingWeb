@@ -1,0 +1,254 @@
+/*=========有合计=========*/
+>>> .el-table {
+  background: #F6F6F6;
+  border-left: 0;
+}
+
+>>> .el-table__body-wrapper::-webkit-scrollbar {
+  width: 3px;
+  height: 5px;
+  background: #E7EEF9;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+>>> .el-table__body-wrapper::-webkit-scrollbar-thumb {
+  background-color: #CED8EA;
+  width: 3px;
+  height: 5px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+>>> .el-table__footer-wrapper, .el-table__header-wrapper {
+  height: 72px;
+  background: #F6F6F6;
+}
+
+>>> .el-table .ascending .sort-caret.ascending {
+  border-bottom-color: #5996F8;
+}
+
+>>> .el-table .descending .sort-caret.descending {
+  border-top-color: #5996F8;
+}
+
+>>> .el-table::before {
+  display: none;
+}
+
+>>> .orderTableHeaderStyle th {
+  background: #E5E5E5;
+  height: 45px !important;
+  padding: 0;
+  line-height: 45px !important;
+  color: #808080;
+  font-size: 14px;
+  border-bottom: 0;
+  border-color: #DDD;
+}
+
+>>> .orderTableHeaderStyles th {
+  background: #DDDDDD;
+  height: 45px;
+  padding: 0;
+  line-height: 45px;
+  color: #808080;
+  font-size: 14px;
+  border-bottom: 0;
+  border-color: #DDD;
+}
+
+>>> .orderTableHeaderStyle th:nth-last-of-type(2) {
+  border: 0;
+}
+
+>>> .orderTableRowStyle td {
+  padding: 0;
+  height: 45px;
+  border-top: 0;
+  border-bottom: 0;
+  border-color: #DDD;
+  transition: all .2s;
+  color: #808080;
+}
+
+>>> .el-table__header {
+  border-left: 1px solid #DDD;
+}
+
+>>> .el-table__body-wrapper {
+  border-left: 1px solid #DDD;
+}
+
+>>> .el-table__body {
+  border-bottom: 1px solid #ececec;
+}
+
+>>> .orderTableRowStyle td:first-of-type a {
+  color: #5996F8;
+}
+
+>>> .orderTableRowStyle td a.delOrder {
+  color: #BBB;
+  margin-left: 10px;
+  transition: all .3s;
+}
+>>> .orderTableRowStyle td .delOrder {
+  color: #BBB;
+  margin-left: 10px;
+  transition: all .3s;
+}
+
+>>> .orderTableRowStyle .delOrder:hover {
+  color: #e97a03;
+}
+
+>>> .orderTableRow1nStyle td {
+  background: #F0F0F0;
+}
+
+>>> .orderTableRow2nStyle td {
+  background: #F6F6F6;
+}
+
+>>> .orderTableRowStyle:hover td {
+  background: #F0F4FA !important;
+  color: #5996F8;
+}
+
+>>> .el-table__footer-wrapper .has-gutter td {
+  background: #F6F6F6;
+  border-color: #F6F6F6;
+  color: #FF0000;
+  font-weight: 700;
+  border-top: 1px solid #DDD;
+}
+
+>>> .el-table__footer-wrapper .has-gutter td:first-of-type {
+  font-weight: 400;
+}
+
+>>> .el-table__footer-wrapper .has-gutter th.gutter {
+  background: #F6F6F6;
+  border: 0;
+  border-top: 1px solid #DDD;
+}
+
+>>> .el-table .cell.el-tooltip {
+  padding: 0 4px;
+}
+
+>>> .el-table__empty-block {
+  border-bottom: 1px solid #DDD;
+}
+
+>>> .el-table--border::after, .el-table--group::after {
+  background-color: #DDD;
+}
+
+.rightClickShadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.rightClickContent {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 120px;
+  border: 1px solid rgba(220, 230, 245, 1);
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.rightClickContent::before, .moreList::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -5px;
+  left: 17px;
+  border: 1px solid rgba(220, 230, 245, 1);
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.rightClickContent li {
+  height: 32px;
+  line-height: 32px;
+  font-size: 12px;
+  color: #808080;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.rightClickContent li:hover {
+  color: #5996F8;
+  background: #EFF3F9;
+}
+
+.morePS:nth-of-type(2) i {
+  display: none;
+}
+
+.moreImg {
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  vertical-align: -4px;
+  background: url("../../static/img/order/more1.png") no-repeat center center;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.moreImg:hover {
+  background: url("../../static/img/order/more2.png") no-repeat center center;
+}
+
+.moreList {
+  position: fixed;
+  width: 58px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(220, 230, 245, 1);
+  border-radius: 5px;
+  font-size: 12px;
+  color: #808080;
+  padding: 6px 0;
+}
+
+.moreList li {
+  height: 24px;
+  line-height: 24px;
+}
+
+.moreList li:last-of-type {
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.moreList li:last-of-type:hover {
+  color: #5996F8;
+  text-decoration: underline;
+}
+
+.commonColor {
+  color: #5996F8;
+}
+
+/*>>> .commonColor {*/
+/*color: #5996F8;*/
+/*}*/
+
